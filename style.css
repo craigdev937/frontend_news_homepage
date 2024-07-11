@@ -25,20 +25,38 @@ body {
 }
 
 main {
-    display: grid;
-    place-items: center;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 20px 200px;
 }
 
-
 /* HEADER SECTION */
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 ul {
-    display: flex;
+    display: flex;    
     flex-direction: row;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
 }
 
 ul li {
     list-style: none;
 }
+
+/* MAIN SECTION */
+main {
+    display: grid;
+    place-items: center;
+}
+
+
+
 
 
 /* ATTRIBUTION FOOTER SECTION */
