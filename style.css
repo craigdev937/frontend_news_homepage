@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --orange: hsl(35, 77%, 62%);
-    --red: hsl(5, 85%, 63%);
-    --off-white: hsl(36, 100%, 99%);
-    --blue: hsl(236, 13%, 42%);
-    --navy: hsl(240, 100%, 5%);
     --fw-400: 400;
     --fw-700: 700;
     --fw-800: 800;
+    --orange: hsl(35, 77%, 62%);
+    --red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --gray: hsl(233, 8%, 79%);
+    --blue: hsl(236, 13%, 42%);
+    --navy: hsl(240, 100%, 5%);
 }
 
 *, *::before, *::after {
@@ -18,16 +19,20 @@
 }
 
 body {
+    display: grid;
+    place-items: center;
     font-family: "Inter", sans-serif;
     font-size: 15px;
+    font-weight: var(--fw-400);
     background-color: var(--off-white);
     width: 1440px;
 }
 
+/* MAIN SECTION */
 main {
     max-width: 1440px;
     height: 100vh;
-    padding: 20px 200px;
+    padding: 40px 200px;
 }
 
 /* HEADER SECTION */
@@ -36,17 +41,44 @@ header {
     unicode-bidi: isolate;
 }
 
-ul {
-    display: flex;    
-    flex-direction: row;
-    padding: 20px 10px;
+nav {
+    display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-direction: row;
 }
 
-ul li {
-    list-style: none;
+.nav__ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav__href {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 20px;
+    color: var(--blue);
+}
+
+.nav__href:hover {
+    color: var(--orange);
+}
+
+.nav__menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__menu.menu__close {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+}
+
+.img__background {
+    display: none;
 }
 
 /* MAIN SECTION */
