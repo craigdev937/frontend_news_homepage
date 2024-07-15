@@ -28,13 +28,6 @@ body {
     width: 1440px;
 }
 
-/* MAIN SECTION */
-main {
-    max-width: 1440px;
-    height: 100vh;
-    padding: 40px 200px;
-}
-
 /* HEADER SECTION */
 header {
     display: block;
@@ -77,18 +70,85 @@ nav {
     right: 20px;
 }
 
+/* MAIN SECTION */
+main {
+    max-width: 1440px;
+    height: 100vh;
+    padding: 40px 200px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "image image new"
+    "bright bright new"
+    "tech tech tech"
+    ;
+}
+
+/* IMAGE SECTION */
+.image {
+    grid-area: image;
+}
+
 .img__background {
     display: none;
 }
 
-/* MAIN SECTION */
-main {
-    display: grid;
-    place-items: center;
+.img__desktop {
+    width: 50rem;
+    height: auto;
 }
 
+.img__mobile {
+    display: none;
+}
 
+/* BRIGHT SECTION */
+.bright {
+    grid-area: bright;
+}
 
+/* NEW SECTION */
+.new {
+    grid-area: new;
+    background: var(--navy);
+    color: var(--off-white);
+    width: 18rem;
+}
+
+/* TECH SECTION */
+.tech {
+    grid-area: tech;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.laptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers {
+    font-size: 2.5rem;
+    color: var(--gray);
+}
 
 
 /* ATTRIBUTION FOOTER SECTION */

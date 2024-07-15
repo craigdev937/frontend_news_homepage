@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <img src="./public/logo.svg" alt="Logo">
+            <ul class="nav__ul">
+                <li><a class="nav__href" href="#">Home</a></li>
+                <li><a class="nav__href" href="#">New</a></li>
+                <li><a class="nav__href" href="#">Popular</a></li>
+                <li><a class="nav__href" href="#">Trending</a></li>
+                <li><a class="nav__href" href="#">Categories</a></li>
+            </ul>
+            <img 
+                alt="close" 
+                class="menu__close nav__menu" 
+                src="./public/icon-menu-close.svg"  
+            />
+            <img
+                alt="open"
+                class="menu__open nav__menu" 
+                src="./public/icon-menu.svg" 
+            />
+            <div class="img__background"></div>
+        </nav>
+    </header>
     <!-- MAIN SECTION -->
     <main>
-        <!-- HEADER SECTION -->
-        <header>
-            <nav>
-                <img src="./public/logo.svg" alt="Logo">
-                <ul class="nav__ul">
-                    <li><a class="nav__href" href="#">Home</a></li>
-                    <li><a class="nav__href" href="#">New</a></li>
-                    <li><a class="nav__href" href="#">Popular</a></li>
-                    <li><a class="nav__href" href="#">Trending</a></li>
-                    <li><a class="nav__href" href="#">Categories</a></li>
-                </ul>
-                <img 
-                    alt="close" 
-                    class="menu__close nav__menu" 
-                    src="./public/icon-menu-close.svg"  
-                />
-                <img
-                    alt="open"
-                    class="menu__open nav__menu" 
-                    src="./public/icon-menu.svg" 
-                />
-                <div class="img__background"></div>
-            </nav>
-        </header>
         <!-- IMAGE SECTION -->
         <section class="image">
-            <img src="./public/image-web-3-desktop.jpg" alt="Web Desktop">
+            <img
+                class="img__desktop"
+                alt="desktop image"  
+                src="./public/image-web-3-desktop.jpg" 
+            />
+            <img
+                class="img__mobile"
+                alt="mobile image" 
+                src="./public/image-web-3-mobile.jpg" 
+            />
         </section>
         <!-- BRIGHT SECTION -->
         <section class="bright">
@@ -52,37 +61,53 @@
         </section>
         <!-- NEW SECTION -->
         <section class="new">
-            <h1>New</h1>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <aside>
+                <h1>New</h1>
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </aside>
+            <aside>
+                <h1>The Downsides of AI Artistry</h1>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </aside>
+            <aside>
+                <h1>Is VC Funding Drying Up?</h1>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </aside>
         </section>
-
-        
-
-        
-
-         
-
-        
-        
-
-        The Downsides of AI Artistry
-        What are the possible adverse effects of on-demand AI image generation?
-
-        Is VC Funding Drying Up?
-        Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-        01
-        Reviving Retro PCs
-        What happens when old PCs are given modern upgrades?
-
-        02
-        Top 10 Laptops of 2022
-        Our best picks for various needs and budgets.
-
-        03
-        The Growth of Gaming
-        How the pandemic has sparked fresh opportunities.
+        <!-- TECH SECTION -->
+        <section class="tech">
+            <aside class="pc">
+                <img 
+                    class="pc__image"
+                    alt="pc image" 
+                    src="./public/image-retro-pcs.jpg"  
+                />
+                <h1 class="numbers">01</h1>
+                <h1>Reviving Retro PCs</h1>
+                <p>What happens when old PCs are given modern upgrades?</p>
+            </aside>
+            <aside class="laptop">
+                <img
+                    class="laptop__image" 
+                    alt="laptop image"
+                    src="./public/image-top-laptops.jpg" 
+                />
+                <h1 class="numbers">02</h1>
+                <h1>Top 10 Laptops of 2022</h1>
+                <p>Our best picks for various needs and budgets.</p>
+            </aside>
+            <aside class="gaming">
+                <img
+                    class="gaming__image"
+                    alt="gaming image"  
+                    src="./public/image-gaming-growth.jpg" 
+                />
+                <h1 class="numbers">03</h1>
+                <h1>The Growth of Gaming</h1>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+            </aside>
+        </section>
     </main>
     <!-- ATTRIBUTION FOOTER SECTION -->
     <footer class="attribution">
