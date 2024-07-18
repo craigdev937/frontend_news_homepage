@@ -113,6 +113,23 @@ main {
     background: var(--navy);
     color: var(--off-white);
     width: 18rem;
+    padding: 20px;
+}
+
+.new__hero {
+    color: var(--orange);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.new__title {
+    padding: 20px 0;
+}
+
+.new__text {
+    font-size: 80%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
 }
 
 /* TECH SECTION */
