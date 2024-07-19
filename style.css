@@ -19,19 +19,18 @@
 }
 
 body {
-    display: grid;
-    place-items: center;
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: var(--fw-400);
     background-color: var(--off-white);
-    width: 1440px;
+    max-width: 1440px;
 }
 
 /* HEADER SECTION */
 header {
     display: block;
     unicode-bidi: isolate;
+    grid-area: header;
 }
 
 nav {
@@ -72,15 +71,15 @@ nav {
 
 /* MAIN SECTION */
 main {
-    max-width: 1440px;
     height: 100vh;
     padding: 40px 200px;
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
-    "image image new"
-    "bright bright new"
-    "tech tech tech"
+        "header header header"
+        "image image new"
+        "bright bright new"
+        "tech tech tech"
     ;
 }
 
