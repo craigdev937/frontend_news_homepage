@@ -104,6 +104,30 @@ main {
 /* BRIGHT SECTION */
 .bright {
     grid-area: bright;
+    display: flex;
+    flex-direction: row;
+}
+
+.bright__head {
+    font-size: 3.5rem;
+}
+
+.bright__section {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.bright__btn {
+    height: 3rem;
+    width: 11rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: var(--red);
+    color: var(--off-white);
+    border: 0;
 }
 
 /* NEW SECTION */

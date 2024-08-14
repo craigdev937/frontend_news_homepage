@@ -11,29 +11,29 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- HEADER SECTION -->
-    <header>
-        <nav>
-            <img src="./public/logo.svg" alt="Logo">
-            <ul class="nav__ul">
-                <li><a class="nav__href" href="#">Home</a></li>
-                <li><a class="nav__href" href="#">New</a></li>
-                <li><a class="nav__href" href="#">Popular</a></li>
-                <li><a class="nav__href" href="#">Trending</a></li>
-                <li><a class="nav__href" href="#">Categories</a></li>
-            </ul>
-            <img 
-                alt="close" 
-                class="menu__close nav__menu" 
-                src="./public/icon-menu-close.svg"  
-            />
-            <img
-                alt="open"
-                class="menu__open nav__menu" 
-                src="./public/icon-menu.svg" 
-            />
-            <div class="img__background"></div>
-        </nav>
-    </header>
+        <header>
+            <nav>
+                <img src="./public/logo.svg" alt="Logo">
+                <ul class="nav__ul">
+                    <li><a class="nav__href" href="#">Home</a></li>
+                    <li><a class="nav__href" href="#">New</a></li>
+                    <li><a class="nav__href" href="#">Popular</a></li>
+                    <li><a class="nav__href" href="#">Trending</a></li>
+                    <li><a class="nav__href" href="#">Categories</a></li>
+                </ul>
+                <img 
+                    alt="close" 
+                    class="menu__close nav__menu" 
+                    src="./public/icon-menu-close.svg"  
+                />
+                <img
+                    alt="open"
+                    class="menu__open nav__menu" 
+                    src="./public/icon-menu.svg" 
+                />
+                <div class="img__background"></div>
+            </nav>
+        </header>
         <!-- IMAGE SECTION -->
         <section class="image">
             <img
@@ -49,15 +49,17 @@
         </section>
         <!-- BRIGHT SECTION -->
         <section class="bright">
-            <h1>The Bright Future of Web 3.0?</h1>
-            <p>
-                We dive into the next evolution of the 
-                web that claims to put the power of 
-                the platforms back into the hands of 
-                the people. But is it really 
-                fulfilling its promise?
-            </p>
-            <button>Read more</button>
+            <h1 class="bright__head">The Bright Future of Web 3.0?</h1>
+            <div class="bright__section">
+                <p class="bright__text">
+                    We dive into the next evolution of the 
+                    web that claims to put the power of 
+                    the platforms back into the hands of 
+                    the people. But is it really 
+                    fulfilling its promise?
+                </p>
+                <button class="bright__btn">Read more</button>
+            </div>
         </section>
         <!-- NEW SECTION -->
         <section class="new">
@@ -108,24 +110,25 @@
                 <p>How the pandemic has sparked fresh opportunities.</p>
             </aside>
         </section>
+        <!-- ATTRIBUTION FOOTER SECTION -->
+        <footer class="attribution">
+            <p>
+                Challenge for
+                <a 
+                    href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" 
+                    target="_blank"
+                    >Frontend Mentor
+                </a>
+                created by
+                <a 
+                    href="https://www.frontendmentor.io/profile/craigdev937" 
+                    target="_blank"
+                    >Craig Johnson
+                </a>
+            </p>
+        </footer>
     </main>
-    <!-- ATTRIBUTION FOOTER SECTION -->
-    <footer class="attribution">
-        <p>
-            Challenge for
-            <a 
-                href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" 
-                target="_blank"
-                >Frontend Mentor
-            </a>
-            created by
-            <a 
-                href="https://www.frontendmentor.io/profile/craigdev937" 
-                target="_blank"
-                >Craig Johnson
-            </a>
-        </p>
-    </footer>
+    
     <script src="main.js"></script>
 </body>
 </html>
